@@ -1,7 +1,7 @@
 # Health Information System (HIS) - README
 
 ## Project Prototype
-You can view the project prototype on [GitHub](https://github.com/faith-mainah/prototype).
+[https://github.com/faith-mainah/prototype](https://github.com/faith-mainah/prototype)
 
 ## Overview
 The **Health Information System (HIS)** is a web-based application designed to manage client health information, including enrollment in health programs. The system is developed using **PHP**, **HTML**, **CSS**, **JavaScript**, and utilizes **MySQL** as the database.
