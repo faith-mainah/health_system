@@ -24,7 +24,10 @@ Before setting up the project, make sure you have the following installed on you
 #### 3. Download and Set up the Project
 ```bash
 git clone https://github.com/your-username/health-information-system.git
-Place the entire project folder (health-information-system) inside the htdocs folder of your XAMPP installation.
+Place the entire project f![pss](https://github.com/user-attachments/assets/f3a6a91c-803e-4965-a21b-b646eb0cb0ce)
+older (health-information-system) ![index](https://github.com/user-attachments/assets/88502f2e-25f2-4c88-b2ae-d2aa200a9721)
+![register](https://github.com/user-attachments/assets/5b983e8f-8991-4f06-a149-82954d5f5930)
+inside the htdocs folder of your XAMPP installation.
 
 The typical path for the htdocs folder is:
 
@@ -75,6 +78,7 @@ Hosting the Application Locally
 To host the Health Information System (HIS) on your local machine using XAMPP:
 
 Ensure Apache and MySQL are Running:
+![index](https://github.com/user-attachments/assets/6509d965-5070-41ae-a883-7fa2802ec792)
 
 Open the XAMPP Control Panel.
 
