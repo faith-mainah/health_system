@@ -2,7 +2,7 @@
 
 ## Project Prototype
 
-[[https://github.com/faith-mainah/prototype](https://github.com/faith-mainah/prototype-/blob/master/prototype%20(1)%20(1).mp4)](https://github.com/faith-mainah/prototype)
+[[https://github.com/faith-mainah/prototype](https://github.com/faith-mainah/prototype-/blob/master/prototype%20(1)%20(1).mp4)]
 just view raw
 
 ## Overview
