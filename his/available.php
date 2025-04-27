@@ -9,19 +9,10 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             height: 100vh;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .programs-wrapper {
-            width: 90%;
-            max-width: 1200px;
-            display: flex;
-            justify-content: center;
+            overflow-y: auto; /* Make the whole page scrollable */
         }
 
         .programs-container {
@@ -54,31 +45,29 @@
 </head>
 <body>
 
-    <div class="programs-wrapper">
-        <div class="programs-container">
-            <?php
-                include('db.php');
-                include('config.php');
+    <div class="programs-container">
+        <?php
+            include('db.php');
+            include('config.php');
 
-                $query = "SELECT MIN(program_id) AS program_id, program_name FROM programs GROUP BY program_name ORDER BY program_id ASC";
-                $result = mysqli_query($conn, $query);
+            $query = "SELECT MIN(program_id) AS program_id, program_name FROM programs GROUP BY program_name ORDER BY program_id ASC";
+            $result = mysqli_query($conn, $query);
 
-                if (!$result) {
-                    die('Error fetching programs: ' . mysqli_error($conn));
-                }
+            if (!$result) {
+                die('Error fetching programs: ' . mysqli_error($conn));
+            }
 
-                while ($row = mysqli_fetch_assoc($result)):
-            ?>
-                <div class="program-card">
-                    <div class="program-id">
-                        Program ID: <?php echo htmlspecialchars($row['program_id']); ?>
-                    </div>
-                    <div class="program-name">
-                        Program Name: <?php echo htmlspecialchars($row['program_name']); ?>
-                    </div>
+            while ($row = mysqli_fetch_assoc($result)):
+        ?>
+            <div class="program-card">
+                <div class="program-id">
+                    Program ID: <?php echo htmlspecialchars($row['program_id']); ?>
                 </div>
-            <?php endwhile; ?>
-        </div>
+                <div class="program-name">
+                    Program Name: <?php echo htmlspecialchars($row['program_name']); ?>
+                </div>
+            </div>
+        <?php endwhile; ?>
     </div>
 
 </body>
