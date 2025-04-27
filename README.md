@@ -151,4 +151,3 @@ if (password_verify($password, $user['password'])) { ... }
 Note: Ensure that the maximum length of the password adheres to the requirements in the screenshot provided.
 
 
-[![pss](https://github.com/user-attachments/assets/efe71878-cf81-480a-800e-9a7f842e4b38)](http://localhost/HIS/his/video/Health%20Information%20System%20prototype.mp4)
