@@ -25,6 +25,36 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+.main-buttons {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.button-card:hover {
+    transform: translateY(-8px);
+}
+
+.button-card a {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #1f6391;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.button-card a:hover {
+    background-color: #1f6391;
+}
+
 nav {
     margin-top: 20px;
 }
@@ -195,4 +225,128 @@ footer {
     .client-info p {
         font-size: 1em;
     }
+
+    .main-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button-card {
+        width: 90%;
+        height: 150px;
+    }
+
+    .button-card a {
+        font-size: 1.4em;
+    }
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #3498db;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+.login-container, .register-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2, .register-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+}
+
+.register-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .login-container, .register-container {
+        padding: 20px;
+        margin: 20px;
+        max-width: 90%;
+    }
+    
+    form input,
+    form button {
+        font-size: 1em;
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.menu-button {
+    font-size: 40px;
+    cursor: pointer;
+    color: #333;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 150px;
+    padding: 10;
 }

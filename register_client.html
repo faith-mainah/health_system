@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register New Client</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateForm() {
+            var clientId = document.getElementById("client_id").value;
+            var name = document.getElementById("name").value;
+            if (clientId == "" || name == "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+            var clientIdPattern = /^[A-Za-z0-9]+$/;
+            if (!clientId.match(clientIdPattern)) {
+                alert("Client ID should only contain alphanumeric characters.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Register New Client</h1>
     </header>
 
-    <form action="php/register_client.php" method="POST" id="registerForm">
+    <form action="php/register_client.php" method="POST" id="registerForm" onsubmit="return validateForm()">
+        <label for="client_id">Client ID:</label>
+        <input type="text" id="client_id" name="client_id" required>
+
         <label for="name">Client Name:</label>
         <input type="text" id="name" name="name" required>
 

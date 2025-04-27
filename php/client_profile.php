@@ -1,4 +1,6 @@
 <?php
+include('../auth.php');
+
 include('../db.php');
 if (isset($_GET['id'])) {
     $client_id = intval($_GET['id']);
