@@ -9,26 +9,10 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-<<<<<<< HEAD
             padding: 20px;
             height: 100vh;
             background-color: #f4f4f4;
             overflow-y: auto; /* Make the whole page scrollable */
-=======
-            padding: 0;
-            height: 100vh;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .programs-wrapper {
-            width: 90%;
-            max-width: 1200px;
-            display: flex;
-            justify-content: center;
->>>>>>> 2dcc9986e3e5ce29db032b22a665129f2a77ec4e
         }
 
         .programs-container {
