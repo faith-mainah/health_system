@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (mysqli_num_rows($result) > 0) {
         $user = mysqli_fetch_assoc($result);
 
-        if (password_verify($password, $user['password'])) {
+        if (password_verify($password, hash: $user['password'])) {
             $_SESSION['authenticated'] = true;
             $_SESSION['username'] = $username;
             header('Location: index.html');
